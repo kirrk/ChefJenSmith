@@ -1,3 +1,3 @@
 # Chef Jen Smith's Website
 
-#### A website for Seattle pastry chef, Jen Smith, build in .NET via C&#35;
+#### A website for Seattle pastry chef, Jen Smith, built in .NET via C&#35;
