@@ -3,12 +3,12 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
-    <div class="container-fluid">
+    <div class="container-fluid inside">
       <div class="jbody">
          <div class="page-header">
             <h1>Videos by Chef Jen Smith</h1>
           <div class="videos">
-    <iframe width="854" height="510" src="//www.youtube.com/embed/EW4q2qGfmo0" frameborder="0" allowfullscreen></iframe>
+    <iframe src="//www.youtube.com/embed/EW4q2qGfmo0" frameborder="0" allowfullscreen></iframe>
                </div>
              </div>
           </div>

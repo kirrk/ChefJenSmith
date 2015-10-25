@@ -4,7 +4,7 @@
 </asp:Content>
 
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
-<div class="container-fluid">
+<div class="container-fluid inside">
     <div class="jbody">
         <div class="page-header">
      <h1>Chef Services</h1>

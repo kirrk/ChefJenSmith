@@ -15,10 +15,20 @@ body
    padding-left: 0 !important;
    padding-right: 0 !important;
 }
+@media (max-width: 700px) {
+    .container-fluid {
+        width: 150%;
+    }    
+    .container-fluid .inside {
+        width: 100%;
+   }    
+ }
+    
 .container-fluid .home {
    padding-left: 0 !important;
    padding-right: 0 !important;
    background: #e1eef2;
+   width: 100%;
 }
 .page-header p
 {
@@ -162,10 +172,7 @@ h3.circle-one:hover, h3.circle-two:hover, h3.circle-three:hover {
     margin: auto;
     cursor: pointer;
 }
-form#form1
-{
-width: 100%;
-}
+
 /*contact form*/
 #chefContactForm
 {
@@ -408,7 +415,7 @@ a.selected.static
         cursor: pointer;
         position: absolute;
         top: 15px;
-        right: 15px;
+        left: 390px;
         border: 0;
         text-indent: 200%;
         overflow: hidden;
@@ -526,7 +533,8 @@ ul.services li {
     }
 /** videos **/
 div.videos {
-    margin: 1em 0 0 2em;
+    margin: 1em 0 0 3em;
+    width: 100%;
 }
  /** slideshow **/
 .arrow {
