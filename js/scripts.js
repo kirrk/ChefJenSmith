@@ -16,6 +16,12 @@ $(document).ready(function () {
         linkedin: 'https://www.linkedin.com/profile/view?id=83649241',
         pinterest: 'http://www.pinterest.com/sweetchefgirl/'
     };
+    
+       //mobile nav
+      $('.mobile').click( function(event) {
+          event.preventDefault();
+          $('#jenHeader_NavigationMenu ul li a').css('display', 'block');
+      });
 
     var social = function () {
         var output = '<ul class="events"><li>special events<span>|</span></li><li>classes<span>|</span></li><li>consulting</li></ul>';
@@ -138,10 +144,5 @@ $(document).ready(function () {
              $(this).removeClass('borderGal');
       }); 
       
-      //mobile nav
-      $('.mobile').click( function(event) {
-          event.preventDefault();
-          $('#jenHeader_NavigationMenu ul li a').css('display', 'block');
-      });
       
  });

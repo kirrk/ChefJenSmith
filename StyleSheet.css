@@ -334,7 +334,7 @@ nav#social > ul.events > li span
 }
 @media  (max-width: 600px) {
     #jenHeader_NavigationMenu {
-        margin: 0 0 1.3em;
+        margin: 0 1em 1.3em;
         padding: 0 0 .5em;
         clear: none;
         float: left !important;
@@ -346,7 +346,6 @@ nav#social > ul.events > li span
     }
     #jenHeader_NavigationMenu ul li a {
         font-size: 1em !important;
-        display: none
     }
     #jenHeader_NavigationMenu ul li a {
         display: none;
@@ -375,7 +374,7 @@ nav#social > ul.events > li span
   text-decoration: none;
   list-style-type: none;
   color: #fff;
-  padding: 0 1.5em 0 2em;
+  padding: 0 1.5em 1em 2em;
   font-size: 1.3em;
   text-transform: uppercase;
 }
@@ -406,6 +405,7 @@ a.selected.static
 }
 
     .mobile {
+        cursor: pointer;
         position: absolute;
         top: 15px;
         right: 15px;
