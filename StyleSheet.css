@@ -43,6 +43,17 @@ div.sideleft {
     width: 105%;
     border-top: thin solid #0EC3F7;
 }
+@media (max-width: 700px) {
+    div.sideleft {
+    background: url('/images/sideleft/bg-side.jpg') repeat #cde6ed;
+    padding: 2em 4em 0 1em;
+    margin: 2.5em 0 0 0;
+    clear: both;
+    float: left;
+    width: 100%;
+    border-top: thin solid #0EC3F7;
+  } 
+}
 div.info:first-child {
     margin: 0 0 3em 7em;
 }
@@ -311,6 +322,7 @@ nav#social > ul.events > li span
 {
     color: #0EC3F7;
 }
+@media (min-width: 700px) {
 #jenHeader_NavigationMenu
 {
     display: inline;
@@ -318,6 +330,7 @@ nav#social > ul.events > li span
     clear: none;
     float: right !important;
     text-decoration: none !important;
+  }
 }
 @media  (max-width: 600px) {
     #jenHeader_NavigationMenu {
@@ -326,24 +339,36 @@ nav#social > ul.events > li span
         clear: none;
         float: left !important;
         text-decoration: none !important;
+        display: none
     }
     #jenHeader {
         height: 12em;
     }
     #jenHeader_NavigationMenu ul li a {
         font-size: 1em !important;
+        display: none
+    }
+    #jenHeader_NavigationMenu ul li a {
+        display: none;
+        font-family: "Roboto Condensed", Helvetica, sans-serif;
+        text-decoration: none;
+        list-style-type: none;
+        color: #fff;
+        padding: 0 1.5em 0 2em;
+        font-size: 1.3em;
+        text-transform: uppercase;
+    }
+    #jenHeader_NavigationMenu ul li a:hover
+    {
+        color: #0EC3F7;
+        text-decoration:none;
+    }
+    #jenHeader_NavigationMenu li
+    {
+        list-style-type: none;
     }
 }
-@media (max-width: 600px) {
-    .mobile {
-        display: none;
-  }
-}
-@media (min-width: 700px) {
-    .mobile {
-        display: none;
-  }
-}
+
 #jenHeader_NavigationMenu ul li a
 {
   font-family: "Roboto Condensed", Helvetica, sans-serif;
@@ -373,6 +398,41 @@ a.selected.static
 {
      color: #0EC3F7;
 }
+/* mobile menu */
+@media (min-width: 700px) {
+    .mobile {
+        display: none;
+  }
+}
+
+    .mobile {
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        border: 0;
+        text-indent: 200%;
+        overflow: hidden;
+        background: rgba(255,255,255,0.8) url("http://i.imgur.com/vKRaKDX.png") center no-repeat;
+        border: 1px solid #ddd;
+        border-radius: 3px;
+        background-size: 80%;
+        width: 30px;
+        height: 30px;
+        outline: none;
+        -webkit-transition: all 400ms ease;
+                transition: all 400ms ease;
+}
+.mobile .expanded {
+  -webkit-transform: rotate(90deg);
+      -ms-transform: rotate(90deg);
+          transform: rotate(90deg);
+  background-color: transparent;
+  border: 0;
+}
+.mobile a {
+  display: block;
+}
+
 /* body */
 div.jbody
 {

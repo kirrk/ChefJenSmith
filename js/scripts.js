@@ -137,4 +137,11 @@ $(document).ready(function () {
       },  function () {
              $(this).removeClass('borderGal');
       }); 
+      
+      //mobile nav
+      $('.mobile').click( function(event) {
+          event.preventDefault();
+          $('#jenHeader_NavigationMenu ul li a').css('display', 'block');
+      });
+      
  });
